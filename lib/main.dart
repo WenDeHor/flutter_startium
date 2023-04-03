@@ -16,11 +16,15 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepOrangeAccent,
           centerTitle: true,
         ),
-        body: Center(
-          child: Image(
-            image: AssetImage('assets/1111.jpg'),
-//            image: NetworkImage('https://images.squarespace-cdn.com/content/v1/5c0f697e9d5abb8c65cd6857/1599032187414-92U41D7HVIIFVCHHBDA3/Artboard+2.png?format=1500w'),
-          ),
+        body: Container(
+          child: const Text('Test app by progect'),
+          color: Colors.deepOrangeAccent,
+//          margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 50.5),
+          margin: EdgeInsets.fromLTRB(10.0, 50.0, 80.0, 100.0),
+//          margin: EdgeInsets.all(20.5),
+//          padding: EdgeInsets.all(5.5),
+//          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 50.5),
+          padding: EdgeInsets.fromLTRB(10.0, 50.0, 80.0, 100.0),
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepOrangeAccent,
