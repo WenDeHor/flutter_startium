@@ -16,15 +16,41 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepOrangeAccent,
           centerTitle: true,
         ),
-        body: Container(
-          child: const Text('Test app by progect'),
-          color: Colors.deepOrangeAccent,
-//          margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 50.5),
-          margin: EdgeInsets.fromLTRB(10.0, 50.0, 80.0, 100.0),
-//          margin: EdgeInsets.all(20.5),
-//          padding: EdgeInsets.all(5.5),
-//          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 50.5),
-          padding: EdgeInsets.fromLTRB(10.0, 50.0, 80.0, 100.0),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('data'),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Button',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.red,
+                        fontFamily: 'DeliciousHandrawn'),
+                  ),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                Text('data'),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Button',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.red,
+                        fontFamily: 'DeliciousHandrawn'),
+                  ),
+                )
+              ],
+            )
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepOrangeAccent,
