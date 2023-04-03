@@ -17,23 +17,10 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: ElevatedButton.icon(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.supervised_user_circle_rounded,
-              color: Colors.deepOrangeAccent,
-            ),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(const Color.fromRGBO(106, 194, 252, 50.0)),
-                shape: MaterialStateProperty.all(RoundedRectangleBorder( borderRadius: BorderRadius.circular(10) ))
-            ),
-            label: const Text('Press me'),
+          child: Image(
+            image: AssetImage('assets/1111.jpg'),
+//            image: NetworkImage('https://images.squarespace-cdn.com/content/v1/5c0f697e9d5abb8c65cd6857/1599032187414-92U41D7HVIIFVCHHBDA3/Artboard+2.png?format=1500w'),
           ),
-//          child: Icon(
-//            Icons.supervised_user_circle_rounded,
-//            size: 45,
-//            color: Colors.deepOrangeAccent,
-//          ),
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepOrangeAccent,
