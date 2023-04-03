@@ -1,64 +1,54 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  return runApp(MyApp());
+  return runApp(MaterialApp(
+    home: UserPanel(),
+  ));
 }
 
-class MyApp extends StatelessWidget {
+class UserPanel extends StatelessWidget {
+//  const UserPanel({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.deepOrangeAccent), //Not working
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Test app by progect'),
-          backgroundColor: Colors.deepOrangeAccent,
-          centerTitle: true,
-        ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('data'),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Button',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.red,
-                        fontFamily: 'DeliciousHandrawn'),
-                  ),
-                )
-              ],
-            ),
-            Column(
-              children: [
-                Text('data'),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Button',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.red,
-                        fontFamily: 'DeliciousHandrawn'),
-                  ),
-                )
-              ],
-            )
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.deepOrangeAccent,
-          onPressed: () {
-            print('press');
-          },
-          child: const Text('Press'),
-        ),
+    return Scaffold(
+      backgroundColor: Colors.white70,
+      appBar: AppBar(
+        title: Text('First app title'),
+        centerTitle: true,
+        backgroundColor: Colors.black45,
+      ),
+      body: SafeArea(
+        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Column(
+            children: [
+              Padding(padding: EdgeInsets.only(top: 20)),
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/1111.jpg'),
+                radius: 50,
+              ),
+              Padding(padding: EdgeInsets.only(top: 10)),
+              Text(
+                'Jone Deer',
+                style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.deepOrange,
+                    fontFamily: 'DeliciousHandrawn'),
+              ),
+              Padding(padding: EdgeInsets.only(top: 10)),
+              Row(
+                children: [
+                  Icon(Icons.account_circle, size: 50, color:  Colors.lightBlue),
+                  Padding(padding: EdgeInsets.only(left: 10)),
+                  CircleAvatar(
+                      backgroundImage: AssetImage('assets/1111.jpg')),
+                  Padding(padding: EdgeInsets.only(left: 10)),
+                  Text("Volodymyr Mazur", style: TextStyle(color: Colors.lightBlue),)
+                ],
+              )
+            ],
+          ),
+        ]),
       ),
     );
   }
