@@ -47,16 +47,18 @@ class _HomeScreenState extends State<HomeScreen> {
               axis: FlipAxis.vertical,
               controller: _cong,
               frontWidget: Center(
-                  child: Container(
-                height: 450,
-                width: 300,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(60), // Image border
-                  child: SizedBox.fromSize(
-                      size: Size.fromRadius(50), // Image radius
-                      child: Image.asset('assets/1111.jpg', fit: BoxFit.cover)),
+                child: Container(
+                  height: 450,
+                  width: 300,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(60), // Image border
+                    child: SizedBox.fromSize(
+                        size: Size.fromRadius(50), // Image radius
+                        child:
+                            Image.asset('assets/1111.jpg', fit: BoxFit.cover)),
+                  ),
                 ),
-              )),
+              ),
               backWidget: Center(
                 child: Container(
                   height: 450,
