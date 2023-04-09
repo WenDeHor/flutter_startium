@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844030181725",
+    "project_id": "todoflutter-2265e",
+    "storage_bucket": "todoflutter-2265e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844030181725:android:c08f3f997b1cfe10aaa8b4",
+        "android_client_info": {
+          "package_name": "com.example.flutter_startium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844030181725-u2kilntr3hu8aac8mnma15pnpimsc504.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrOSFLREVWB2a98x6_Ua5djqUNhL4v5-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844030181725-u2kilntr3hu8aac8mnma15pnpimsc504.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
